@@ -1,9 +1,99 @@
-body {
-    
-}
+/* ПАРАГРАФИ Основний колір тексту #757575 */
+/* ЗАГОЛОВКИ Додатковий колір тексту #212121 */
+/* Блакитний Акцент #2196F3 */
 
-/* Основний колір тексту #212121 */
-/* Додатковий олір тексту #757575 */
-/* Акцент #2196F3 */
 /* Білий #FFFFFF */
 /* Білий з прозорістю rgba(255, 255, 255, 0.6); */
+
+/* Фон основний #FFFFFF */
+/* Фон додатковий #F5F4FA */
+/* Фон футер #2F303A*/
+
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+   background-color: #FFFFFF;
+   color: var(--primary-text-color); 
+}
+
+/* Прибирає крапки-маркери у списках */
+.list {
+    list-style: none;
+}
+
+/* ЛОГОТИП */
+.logo {
+    color: #000000;
+}
+.logo-accent {
+    color: var(--accent-color);
+}
+
+/* НАВІГАЦІЯ */
+.current {
+    color: var(--accent-color);
+}
+.current:hover,
+.current:focus {
+    color: var(--secondary-text-color);
+}
+
+.site-nav .link {
+    color: var(--secondary-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* АВТОРИЗАЦІЯ  ?????????????НЕ НАСЛІДУЄТЬСЯ колір з body??????*/
+.autho .link {
+    color:var(--primary-text-color);
+}
+.autho .link:hover,
+.autho .link:focus {
+    color:var(--accent-color)
+}
+/*   ГЕРОЙ   */
+
+
+/*   СЕКЦІЇ  */
+.section-title {
+    color: var(--secondary-text-color);
+}
+
+/*   ОСОБЛИВОСТІ   */
+.features .title {
+    color: var(--secondary-text-color);
+}
+
+/* НАША КОМАНДА */
+.team .title {
+    color: var(--secondary-text-color);
+}
+
+
+
+
+/* ФУТЕР */
+.footer {
+    background-color: #2F303A;
+    color: #FFFFFF;
+}
+.footer .logo {
+    color: #FFFFFF;
+}
+
+.contacts .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts .link:hover,
+.autcontactsho .link:focus {
+    color: var(--accent-color);
+}
+
