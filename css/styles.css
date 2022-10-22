@@ -1,10 +1,8 @@
 /* ПАРАГРАФИ Основний колір тексту #757575 */
 /* ЗАГОЛОВКИ Додатковий колір тексту #212121 */
 /* Блакитний Акцент #2196F3 */
-
 /* Білий #FFFFFF */
 /* Білий з прозорістю rgba(255, 255, 255, 0.6); */
-
 /* Фон основний #FFFFFF */
 /* Фон додатковий #F5F4FA */
 /* Фон футер #2F303A*/
@@ -13,10 +11,16 @@
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
+
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
+    --accent-background-color: #2F303A;
+
+    --primary-white-color: #ffffff;
 }
 
 body {
-   background-color: #FFFFFF;
+   background-color: var(--primary-background-color);
    color: var(--primary-text-color); 
 }
 
@@ -34,20 +38,20 @@ body {
 }
 
 /* НАВІГАЦІЯ */
-.current {
-    color: var(--accent-color);
-}
-.current:hover,
-.current:focus {
-    color: var(--secondary-text-color);
-}
-
 .site-nav .link {
     color: var(--secondary-text-color);
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
     color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.site-nav .link.current:hover,
+.site-nav .link.current:focus {
+    color: var(--secondary-text-color);
 }
 
 /* АВТОРИЗАЦІЯ  ?????????????НЕ НАСЛІДУЄТЬСЯ колір з body??????*/
@@ -58,8 +62,14 @@ body {
 .autho .link:focus {
     color:var(--accent-color)
 }
-/*   ГЕРОЙ   */
 
+/*   ГЕРОЙ   */
+.hero {
+    background-color: var(--accent-background-color);
+}
+.hero .title {
+    color: var(--primary-white-color);
+}
 
 /*   СЕКЦІЇ  */
 .section-title {
@@ -78,14 +88,13 @@ body {
 
 
 
-
 /* ФУТЕР */
 .footer {
-    background-color: #2F303A;
-    color: #FFFFFF;
+    background-color: var(--accent-background-color);
+    color: var(--primary-white-color);
 }
 .footer .logo {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 .contacts .link {
@@ -97,3 +106,22 @@ body {
     color: var(--accent-color);
 }
 
+/* BUTTON */
+.button {
+
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary {
+    color: var(secondary-text-color);
+    background-color: var(secondary-background-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
