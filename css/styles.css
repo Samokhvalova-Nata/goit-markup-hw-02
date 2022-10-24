@@ -29,6 +29,25 @@ body {
     list-style: none;
 }
 
+/* BUTTON */
+.button {}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.secondary {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
 /* ЛОГОТИП */
 .logo {
     color: #000000;
@@ -54,7 +73,7 @@ body {
     color: var(--secondary-text-color);
 }
 
-/* АВТОРИЗАЦІЯ  ?????????????НЕ НАСЛІДУЄТЬСЯ колір з body??????*/
+/* АВТОРИЗАЦІЯ */
 .autho .link {
     color:var(--primary-text-color);
 }
@@ -82,11 +101,18 @@ body {
 }
 
 /* НАША КОМАНДА */
-.team .title {
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team-list .title {
     color: var(--secondary-text-color);
 }
 
-
+/* ПОРТФОЛІО */
+.cards-title {
+    color: var(--secondary-text-color);
+}
 
 /* ФУТЕР */
 .footer {
@@ -106,22 +132,4 @@ body {
     color: var(--accent-color);
 }
 
-/* BUTTON */
-.button {
 
-}
-
-.button.primary {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
-.button.secondary {
-    color: var(secondary-text-color);
-    background-color: var(secondary-background-color);
-}
-.button.secondary:hover,
-.button.secondary:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
