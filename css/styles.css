@@ -48,6 +48,10 @@ body {
     line-height: 1.86;
     letter-spacing: 0.06em;
 }
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #188CE8;
+}
 
 .button.secondary {
     color: var(--secondary-text-color);
@@ -157,7 +161,6 @@ body {
 .features .text {
     line-height: 1.71;
 }
-
 
 /* НАША КОМАНДА */
 .team {
